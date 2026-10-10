@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A1720"/>
+      <stop offset="100%" stop-color="#231713"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C78E"/>
+      <stop offset="50%" stop-color="#C5A46D"/>
+      <stop offset="100%" stop-color="#9C7942"/>
+    </linearGradient>
+    <linearGradient id="meatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D66878"/>
+      <stop offset="100%" stop-color="#8C2B3E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Badge Background -->
+  <rect width="64" height="64" rx="14" fill="url(#favBg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#goldGrad)" stroke-width="1.75"/>
+  <rect x="5" y="5" width="54" height="54" rx="9" fill="none" stroke="#C5A46D" stroke-width="0.75" stroke-dasharray="2 2" opacity="0.45"/>
+
+  <!-- Serving Board Base -->
+  <rect x="8" y="47" width="48" height="4" rx="2" fill="#7A5638"/>
+  <rect x="12" y="48.5" width="40" height="1" rx="0.5" fill="#C5A46D" opacity="0.3"/>
+
+  <!-- Charcuterie Prosciutto Wave / Salumi Slices (Right Side) -->
+  <path d="M37 20 C42 16, 52 18, 52 25 C52 32, 44 38, 38 46 L33 46 C37 40, 44 34, 43 27 C42 22, 38 22, 37 20 Z" fill="url(#meatGrad)"/>
+  <!-- Charcuterie Marbling Line -->
+  <path d="M40 22 C44 20, 48 23, 47 28 C46 32, 40 37, 36 43" fill="none" stroke="#F4BAC3" stroke-width="1.2" stroke-linecap="round" opacity="0.85"/>
+  <ellipse cx="45" cy="38" rx="4.5" ry="6" transform="rotate(-30 45 38)" fill="url(#meatGrad)"/>
+  <ellipse cx="45" cy="38" rx="3.2" ry="4.5" transform="rotate(-30 45 38)" fill="none" stroke="#F4BAC3" stroke-width="0.8" opacity="0.75"/>
+
+  <!-- Artisan Cheese Wedge (Left & Center) -->
+  <!-- Top Angled Surface -->
+  <polygon points="11,35 34,18 43,26 23,43" fill="#F8E7C5"/>
+  <!-- Left Crust / Rind -->
+  <polygon points="11,35 23,43 23,47 11,40" fill="#9C7942"/>
+  <!-- Front Aging Surface with Holes -->
+  <polygon points="23,43 43,26 43,36 23,47" fill="url(#goldGrad)"/>
+
+  <!-- Cheese Eyes / Holes -->
+  <ellipse cx="30" cy="36" rx="2.5" ry="1.8" fill="#3A1720"/>
+  <ellipse cx="38" cy="32" rx="1.8" ry="1.4" fill="#3A1720"/>
+  <ellipse cx="27" cy="42" rx="1.5" ry="1.1" fill="#3A1720"/>
+  <ellipse cx="35" cy="40" rx="2" ry="1.4" fill="#3A1720"/>
+  <ellipse cx="22" cy="29" rx="1.8" ry="1.1" fill="#E8D19F" opacity="0.9"/>
+  <ellipse cx="31" cy="23" rx="1.4" ry="0.9" fill="#E8D19F" opacity="0.9"/>
+
+  <!-- Star Accents -->
+  <circle cx="21" cy="12" r="1.5" fill="#E5C78E"/>
+  <circle cx="27" cy="9" r="1" fill="#E5C78E"/>
+</svg>
