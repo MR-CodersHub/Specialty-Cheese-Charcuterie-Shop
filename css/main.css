@@ -743,7 +743,7 @@ ul, ol {
   background: linear-gradient(135deg, var(--color-burgundy) 0%, #4a1c25 100%);
   color: var(--color-ivory);
   border: 1px solid rgba(197, 164, 109, 0.4);
-  border-radius: var(--radius-pill);
+  border-radius: var(--radius-xs);
   font-family: var(--font-sans);
   font-size: 0.74rem;
   font-weight: 600;
