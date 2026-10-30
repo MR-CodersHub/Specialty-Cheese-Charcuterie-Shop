@@ -2268,6 +2268,10 @@ a.footer-contact-link:hover {
   transition: transform var(--transition-fast), fill var(--transition-fast), stroke var(--transition-fast);
 }
 
+.svg-icon[fill="none"] {
+  fill: none;
+}
+
 .svg-icon.icon-sm { width: 14px; height: 14px; }
 .svg-icon.icon-md { width: 18px; height: 18px; }
 .svg-icon.icon-lg { width: 24px; height: 24px; }
@@ -2291,10 +2295,13 @@ a.footer-contact-link:hover {
 }
 
 .btn-card-wishlist svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   display: block;
   margin: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
 }
 
 .feature-step-icon {
