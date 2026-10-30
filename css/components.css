@@ -700,6 +700,136 @@
 }
 
 /* ==========================================================================
+   1C. STANDARDIZED SUBPAGE HERO HEADER (.page-hero)
+   Unified consistent height, realistic photography background & luxury scrim
+   ========================================================================== */
+.page-hero {
+  position: relative;
+  min-height: 380px;
+  height: clamp(340px, 38vh, 420px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--color-cocoa-dark);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: var(--color-ivory);
+  border-bottom: 1px solid rgba(197, 164, 109, 0.35);
+  overflow: hidden;
+  padding: 3.5rem 1.5rem;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(25, 19, 17, 0.68) 0%,
+    rgba(33, 25, 20, 0.78) 50%,
+    rgba(25, 19, 17, 0.90) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.page-hero .eyebrow {
+  color: var(--color-gold-light);
+  margin-bottom: 0.85rem;
+  display: inline-block;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+}
+
+.page-hero h1 {
+  color: #FFFFFF;
+  font-size: clamp(2.3rem, 4.6vw, 3.8rem);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(248, 243, 233, 0.92);
+  font-size: clamp(0.96rem, 1.5vw, 1.06rem);
+  font-weight: 300;
+  line-height: 1.7;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
+}
+
+/* Page-specific hero background classes */
+.page-hero-about {
+  background-image: url('../images/hero-about.jpg');
+}
+
+.page-hero-products {
+  background-image: url('../images/hero-products.jpg');
+}
+
+.page-hero-board-builder {
+  background-image: url('../images/hero-board-builder.jpg');
+}
+
+.page-hero-gift-boxes {
+  background-image: url('../images/hero-gift-boxes.jpg');
+}
+
+.page-hero-blog {
+  background-image: url('../images/hero-blog.jpg');
+}
+
+.page-hero-blog-details {
+  background-image: url('../images/hero-blog-details.jpg');
+}
+
+.page-hero-contact {
+  background-image: url('../images/hero-contact.jpg');
+}
+
+.page-hero-privacy {
+  background-image: url('../images/hero-privacy.jpg');
+}
+
+.page-hero-terms {
+  background-image: url('../images/hero-terms.jpg');
+}
+
+.page-hero-sitemap {
+  background-image: url('../images/hero-sitemap.jpg');
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 320px;
+    height: auto;
+    padding: 3rem 1.25rem 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    min-height: 290px;
+    padding: 2.5rem 1rem 2rem;
+  }
+  .page-hero h1 {
+    font-size: clamp(1.85rem, 7vw, 2.3rem);
+  }
+}
+
+/* ==========================================================================
    2. LUXURY PRODUCT CARDS & GRID
    ========================================================================== */
 .product-grid {
