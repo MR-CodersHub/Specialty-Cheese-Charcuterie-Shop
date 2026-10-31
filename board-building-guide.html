@@ -215,6 +215,73 @@
             <div class="selectable-ingredient-list" id="ingredientSelectList">
               <!-- Rendered by board-builder.js -->
             </div>
+
+            <!-- Platter Helper Toolbar: Chef's Pick & Clear Actions -->
+            <div class="builder-quick-tools">
+              <div class="builder-quick-tools-label">
+                <svg class="svg-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z"/>
+                </svg>
+                <span>Curated Presets & Controls</span>
+              </div>
+              <div class="builder-quick-actions">
+                <button type="button" class="btn btn-outline btn-sm" onclick="loadChefsSelection()" title="Load Sommelier curated pairing">
+                  <svg class="svg-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                  Chef's Pairing
+                </button>
+                <button type="button" class="btn btn-outline btn-sm" onclick="resetBoard()" title="Reset all selected items">
+                  <svg class="svg-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="1 4 1 10 7 10"/>
+                    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+                  </svg>
+                  Reset Board
+                </button>
+              </div>
+            </div>
+
+            <!-- Artisan Delivery & Service Guarantee Card -->
+            <div class="builder-guarantee-card">
+              <div class="builder-guarantee-header">
+                <div class="builder-guarantee-title">
+                  <svg class="svg-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color:var(--color-gold);">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                  </svg>
+                  Artisan Board Guarantee
+                </div>
+                <span class="builder-guarantee-badge">Fresh Cold-Chain</span>
+              </div>
+              <div class="builder-guarantee-grid">
+                <div class="builder-guarantee-item">
+                  <div class="builder-guarantee-icon">
+                    <svg class="svg-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="12" y1="2" x2="12" y2="22"/>
+                      <line x1="2" y1="12" x2="22" y2="12"/>
+                      <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                      <line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/>
+                    </svg>
+                  </div>
+                  <div class="builder-guarantee-text">
+                    <h6>48-Hour Cold-Chain</h6>
+                    <p>Carved to order & shipped with insulated dry-ice gel packs.</p>
+                  </div>
+                </div>
+                <div class="builder-guarantee-item">
+                  <div class="builder-guarantee-icon">
+                    <svg class="svg-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                      <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                  </div>
+                  <div class="builder-guarantee-text">
+                    <h6>Complimentary Kit</h6>
+                    <p>Includes artisan bamboo tongs, slate labels & pairing card.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

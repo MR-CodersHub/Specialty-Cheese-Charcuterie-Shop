@@ -215,6 +215,44 @@ function addEntireBoardToCart() {
 }
 window.addEntireBoardToCart = addEntireBoardToCart;
 
+function loadChefsSelection() {
+  const all = window.GOURMET_DATABASE?.boardBuilderIngredients || [];
+  const picks = [
+    all.find(i => i.id === 'b-comte'),
+    all.find(i => i.id === 'b-brillat'),
+    all.find(i => i.id === 'b-iberico'),
+    all.find(i => i.id === 'b-figs'),
+    all.find(i => i.id === 'b-truffle-honey'),
+    all.find(i => i.id === 'b-crackers')
+  ].filter(Boolean);
+
+  currentBoardState.selectedItems = picks;
+  renderBoardCanvasItems();
+  renderIngredientTabs(currentActiveTab || 'all');
+  updateBoardCalculations();
+  if (typeof showToast === 'function') {
+    showToast("Chef's Selection Loaded", "We loaded our sommelier's pairing: Comté, Truffle Brie, Ibérico, Figs, Truffle Honey & Sourdough Crackers!", "sparkle");
+  }
+}
+window.loadChefsSelection = loadChefsSelection;
+
+function resetBoard() {
+  if (currentBoardState.selectedItems.length === 0) {
+    if (typeof showToast === 'function') {
+      showToast("Board Already Empty", "Select cheeses and cured meats from the catalog to build your platter.", "info");
+    }
+    return;
+  }
+  currentBoardState.selectedItems = [];
+  renderBoardCanvasItems();
+  renderIngredientTabs(currentActiveTab || 'all');
+  updateBoardCalculations();
+  if (typeof showToast === 'function') {
+    showToast("Board Reset", "All selected items have been removed from your platter.", "info");
+  }
+}
+window.resetBoard = resetBoard;
+
 function renderPlatterControls() {
   renderBoardCanvasItems();
 }
