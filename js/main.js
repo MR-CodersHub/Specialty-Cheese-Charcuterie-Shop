@@ -509,7 +509,7 @@ function openQuickView(productId) {
         <div class="eyebrow">${product.origin}</div>
         <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">${product.name}</h2>
         <p style="color:var(--color-olive); font-weight:600; font-size:0.85rem; margin-bottom:1rem;">${product.subName}</p>
-        <div style="font-family:var(--font-serif); font-size:1.8rem; font-weight:700; color:var(--color-burgundy); margin-bottom:1rem;">
+        <div class="quick-view-price" style="font-family:var(--font-serif); font-size:1.8rem; font-weight:700; color:var(--color-burgundy); margin-bottom:1rem;">
           $${product.price.toFixed(2)} <span style="font-size:0.85rem; color:var(--text-muted); font-family:var(--font-sans); font-weight:400;">/ ${product.weight}</span>
         </div>
         <p style="font-size:0.9rem; line-height:1.7; margin-bottom:1.5rem; color:var(--text-secondary);">${product.description}</p>

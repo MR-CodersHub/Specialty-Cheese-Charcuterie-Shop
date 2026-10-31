@@ -112,6 +112,63 @@
 }
 
 /* ==========================================================================
+   GLOBAL DARK MODE TYPOGRAPHY & BURGUNDY CONTRAST FIXES
+   Transforms all burgundy texts, numbers, headings, prices, links,
+   and icons to high-contrast warm gold tone in dark mode.
+   ========================================================================== */
+[data-theme="dark"] [style*="color:var(--color-burgundy)"],
+[data-theme="dark"] [style*="color: var(--color-burgundy)"],
+[data-theme="dark"] [style*="color:var(--color-burgundy-light)"],
+[data-theme="dark"] [style*="color: var(--color-burgundy-light)"],
+[data-theme="dark"] [style*="color: #652D38"],
+[data-theme="dark"] [style*="color:#652D38"],
+[data-theme="dark"] [style*="color: #652d38"],
+[data-theme="dark"] [style*="color:#652d38"] {
+  color: var(--color-gold-light) !important;
+}
+
+[data-theme="dark"] [style*="color:var(--color-burgundy)"] svg,
+[data-theme="dark"] [style*="color: var(--color-burgundy)"] svg,
+[data-theme="dark"] [style*="color:var(--color-burgundy-light)"] svg,
+[data-theme="dark"] [style*="color: var(--color-burgundy-light)"] svg {
+  color: var(--color-gold-light) !important;
+  fill: currentColor;
+}
+
+/* Explicit text & number contrast rules for dark mode */
+[data-theme="dark"] .glossary-card h4,
+[data-theme="dark"] .glossary-card-title,
+[data-theme="dark"] .sitemap-group-title,
+[data-theme="dark"] .timeline-year,
+[data-theme="dark"] .team-famous-items,
+[data-theme="dark"] .temp-serving-value,
+[data-theme="dark"] .gift-discount-val,
+[data-theme="dark"] .contact-shop-hours,
+[data-theme="dark"] .article-dropcap,
+[data-theme="dark"] .stage-wine-rec,
+[data-theme="dark"] .stage-subtitle-accent,
+[data-theme="dark"] .filter-reset-link,
+[data-theme="dark"] .builder-item-price,
+[data-theme="dark"] .builder-rec-wine-title,
+[data-theme="dark"] .cart-drawer-subtotal,
+[data-theme="dark"] .quick-view-price,
+[data-theme="dark"] #previewEngrave,
+[data-theme="dark"] #detailPrice,
+[data-theme="dark"] #pdpPrice {
+  color: var(--color-gold-light) !important;
+}
+
+/* Interactive elements hover contrast in dark mode */
+[data-theme="dark"] .product-title a:hover,
+[data-theme="dark"] .blog-title a:hover,
+[data-theme="dark"] .dropdown-link:hover,
+[data-theme="dark"] .user-dropdown-link:hover,
+[data-theme="dark"] .drawer-close:hover {
+  color: var(--color-gold-light) !important;
+  border-color: var(--color-gold-light);
+}
+
+/* ==========================================================================
    RTL MODE ADAPTATIONS
    ========================================================================== */
 [dir="rtl"] {

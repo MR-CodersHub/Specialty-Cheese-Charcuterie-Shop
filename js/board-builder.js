@@ -96,7 +96,7 @@ function renderIngredientTabs(category) {
           </div>
         </div>
         <div style="display:flex; align-items:center; gap:0.75rem;">
-          <div style="font-family:var(--font-serif); font-weight:700; color:var(--color-burgundy); font-size:1.1rem;">
+          <div class="builder-item-price" style="font-family:var(--font-serif); font-weight:700; color:var(--color-burgundy); font-size:1.1rem;">
             $${item.price.toFixed(2)}
           </div>
           <button class="ingredient-action-btn" title="${isSelected ? 'Remove' : 'Add to Platter'}">
@@ -187,7 +187,7 @@ function updateBoardCalculations() {
           </svg>
         </span>
         <div>
-          <div style="font-weight:600; font-family:var(--font-serif); font-size:1.15rem; color:var(--color-burgundy);">${recWine}</div>
+          <div class="builder-rec-wine-title" style="font-weight:600; font-family:var(--font-serif); font-size:1.15rem; color:var(--color-burgundy);">${recWine}</div>
           <p style="font-size:0.8rem; color:var(--text-secondary); margin-top:0.2rem;">${tastingReason}</p>
         </div>
       </div>

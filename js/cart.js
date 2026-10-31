@@ -167,7 +167,7 @@ function renderCartDrawer() {
 
       <div style="display:flex; justify-content:space-between; font-family:var(--font-serif); font-size:1.35rem; font-weight:600; margin-bottom:1rem;">
         <span>Cart Subtotal:</span>
-        <span style="color:var(--color-burgundy);">$${subtotal.toFixed(2)}</span>
+        <span class="cart-drawer-subtotal" style="color:var(--color-burgundy);">$${subtotal.toFixed(2)}</span>
       </div>
 
       <button class="btn btn-primary" style="width:100%; margin-bottom:0.75rem;" onclick="triggerCheckoutModal(${subtotal})">

@@ -128,7 +128,7 @@
         <div class="container" style="max-width:800px;">
           <div id="artBody" style="font-size:1.05rem; line-height:1.85; color:var(--text-secondary);">
             <p style="margin-bottom:1.75rem;">
-              <span style="float:left; font-family:var(--font-serif); font-size:4.2rem; line-height:0.8; padding-right:0.75rem; padding-top:0.25rem; color:var(--color-burgundy);">D</span>
+              <span class="article-dropcap" style="float:left; font-family:var(--font-serif); font-size:4.2rem; line-height:0.8; padding-right:0.75rem; padding-top:0.25rem; color:var(--color-burgundy);">D</span>
               eep inside the limestone mountains of the French Jura region stands an extraordinary building: Fort Saint-Antoine. Built in 1879 by military engineers as an underground defense fort, its thick stone walls and subterranean tunnels were designed to survive heavy artillery. Today, instead of weapons, these quiet stone vaults house over 100,000 wheels of authentic French Comté cheese.
             </p>
 
@@ -160,7 +160,7 @@
             <p id="artSidebarText" style="font-size:0.9rem; color:var(--text-secondary); line-height:1.7; margin-bottom:1.25rem;">
               As high-quality cheese ages past 24 months, natural milk proteins gently break down into amino acids. These amino acids group together and form tiny white crystals called tyrosine. They are completely natural, harmless, and deliver that wonderful slight crunch that cheese connoisseurs love.
             </p>
-            <div style="display:flex; align-items:center; gap:0.4rem; font-size:0.85rem; color:var(--color-burgundy); font-weight:600;">
+            <div class="stage-wine-rec" style="display:flex; align-items:center; gap:0.4rem; font-size:0.85rem; color:var(--color-burgundy); font-weight:600;">
               <svg class="svg-icon" style="width:16px; height:16px;" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3h12v3c0 3.31-2.69 6-6 6s-6-2.69-6-6V3zm5 9.93V19H8v2h8v-2h-3v-6.07c3.38-.49 6-3.4 6-6.93V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v4c0 3.53 2.62 6.44 6 6.93zM8 5h8v1c0 2.21-1.79 4-4 4s-4-1.79-4-4V5z"/></svg> <span id="artWine">Best Wine Pairing: Crisp dry white wines like Chablis or rich medium-bodied red wines.</span>
             </div>
           </div>
@@ -436,7 +436,7 @@
         let html = '';
         art.body.forEach((para, i) => {
           if (i === 0) {
-            html += `<p style="margin-bottom:1.75rem;"><span style="${dropStyle}">${para.charAt(0)}</span>${para.slice(1)}</p>`;
+            html += `<p style="margin-bottom:1.75rem;"><span class="article-dropcap" style="${dropStyle}">${para.charAt(0)}</span>${para.slice(1)}</p>`;
           } else {
             html += `<p style="margin-bottom:1.75rem;">${para}</p>`;
           }
